@@ -1,0 +1,406 @@
+     * {
+         box-sizing: border-box;
+     }
+
+     /*For styling the body */
+     body {
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         font-size: 18px;
+     }
+     
+    h1,
+    h2,
+    h3 {
+         text-align: center;
+         justify-content: center;
+     }
+     
+     h1 {
+         font-size: 3rem;
+     }
+     
+     h2 {
+         font-size: 2rem;
+     }
+     
+     h3 {
+         font-size: 1.25rem;
+     }
+     
+     p {
+         font-size: 1.2rem;
+     }
+
+     /*For logo style*/
+     .logo {
+         width: 30px;
+         height: 30px;
+         margin-right: auto;
+     }
+     /*For styling the sprite*/
+     .navlink {
+         list-style: none;
+         display: flex;
+         background-color: olive;
+     }
+
+     /*For styling the menu link*/
+     .items {
+         padding: 30px;
+         padding-top: 5px;
+         padding-bottom: 5px;
+     }
+
+     /*For styling the link*/
+     .items a {
+         text-decoration: none;
+         color: white;
+     }
+
+     /*For styling visited links*/
+     .items a:visited {
+         color: lightgreen;
+     }
+
+     /*For styling hover links*/
+     .items a:hover {
+         color: darkkhaki;
+     }
+
+     /*For styling active links*/
+     .items a:active {
+         color: darkblue;
+     }
+
+     /*For styling images*/
+     .images{
+        display: flex;
+        float: left;
+        padding: 20px;
+     }
+     /*
+     .img {
+         max-width: 15%;
+         max-height: 10%;
+         float: left;
+         margin-right: .5rem;
+         margin-top: 2rem;
+         padding-top: 1rem;
+     }*/
+
+     /*For styling the images*/
+     .img2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+     }
+
+    /*For transition images*/
+     .img2:hover{
+        width: 640px;
+        transition: width 2s, height 2s, transform 2s;
+     }
+
+    /*For styling text description*/
+     .description{
+         font-size: 1.2rem;
+         text-align: justify;
+         border: 2rem;
+         padding: 1rem;
+         margin: auto;
+         width: 50%;
+     }
+
+    /*For styling hero-image*/
+     .hero-image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+     }
+
+    /*For styling hero-text*/
+     .hero-text{
+         font-size: 2.5rem;
+         border: 3rem;
+         padding: 2rem;
+         text-align: center;
+         justify-content: center;
+     }
+     
+    /*For styling the footer*/
+     .footer {
+         position: relative;
+         bottom: 0;
+         right: 0;        
+     }
+
+    /*For styling items in my advocacy page*/
+     .grid-container {
+         display: grid;
+         grid-template-columns: auto auto auto;
+         gap: 2px;
+         padding: 2px;
+         margin: 1rem;
+     }
+     
+    /*For styling all divs under grid-container*/
+     .grid-container>div {
+         text-align: center;
+         padding: 2px 0;
+         font-size: 1.2rem;
+     }
+     
+     /*Styling items under grid container*/
+     .item1,
+     .item3, 
+     .item4{
+         grid-column-start: 1;
+         grid-column-end: 3;
+     }
+
+     /*Styling items under grid container*/
+     .item2 {
+         grid-row-start: span 3;
+     }
+     
+     /*Styling row display in my advocacy and about us page*/
+     .row {
+         display: flex;
+     }
+
+     /*Styling row border in my advocacy page*/
+     .border{
+        border: 2px solid;
+     }
+     
+     /*Styling column in my adovocacy and about us page*/
+     .column {
+         flex: 50%;
+         padding: 1.5rem;
+     }
+
+     /*Styling row in footer*/
+     .footer-row {
+         display: flex;
+     }
+
+     /*Styling column in footer*/
+     .footer-column {
+         flex: 50%;
+         padding: 1.5rem;
+     }
+
+     /*Font style for site-list*/
+     #site-list{
+        font-size: 0.75rem;
+     }
+
+     /*Style for navigation list*/
+    #navlist {
+         position: relative;
+         float: right;
+         margin-right: 5rem;
+     }
+
+     /*Style for navigation list for sprite*/
+     #navlist li {
+         margin: 0;
+         padding: 0;
+         list-style: none;
+         position: absolute;
+         top: 0;
+     }
+     
+     /*Style for navigation list for sprite*/
+     #navlist li,
+     #navlist a {
+         height: 32px;
+         display: block;
+     }
+     
+     /*For Facebook sprite*/
+     #facebook {
+         left: 0px;
+         width: 32px;
+         background: url('../images/social-icons.png') 0 0;
+     }
+     
+     /*For Pinterest sprite*/
+     #pinterest {
+         left: 32px;
+         width: 32px;
+         background: url('images/social-icons.png') -32px 0;
+     }
+     
+     /*For Twitter sprite*/
+     #twitter {
+         left: 64px;
+         width: 32px;
+         background: url('../images/social-icons.png') -64px 0;
+     }
+     
+     /*For YouTube sprite*/
+     #youtube {
+         left: 96px;
+         width: 32px;
+         background: url('../images/social-icons.png') -96px 0;
+     }
+     
+     /*Style for Facebook hover*/
+     #facebook a:hover {
+         left: 0px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') 0 0;
+     }
+     
+     /*Style for Pinterest hover*/
+     #pinterest a:hover {
+         left: 32px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') -32px 0;
+     }
+     
+     /*Style for Twitter hover*/
+     #twitter a:hover {
+         left: 64px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') -64px 0;
+     }
+     
+     /*Style for YouTube hover*/
+     #youtube a:hover {
+         left: 96px;
+         width: 32px;
+         background: url('..//social-icons-hover.png') -96px 0;
+     }
+     
+     /*Style for Facebook active*/
+     #facebook a:active {
+         left: 0px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') 0 0;
+         background-color: green;
+     }
+     
+     /*Style for Pinterest active*/
+     #pinterest a:active {
+         left: 32px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') -32px 0;
+         background-color: green;
+     }
+     
+     /*Style for Twitter active*/
+     #twitter a:active {
+         left: 64px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') -64px 0;
+         background-color: green;
+     }
+     
+     /*Style for YouTube active*/
+     #youtube a:active {
+         left: 96px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') -96px 0;
+         background-color: green;
+     }
+
+     /*Navigation list for sprites*/
+     #navlist li,
+     #navlist a {
+         height: 32px;
+         display: block;
+     }
+     
+     /*Style for Facebook icon*/
+     #facebook {
+         left: 0px;
+         width: 32px;
+         background: url('../images/social-icons.png') 0 0;
+     }
+     
+     /*Style for Pinterest icon*/
+     #pinterest {
+         left: 32px;
+         width: 32px;
+         background: url('../images/social-icons.png') -32px 0;
+     }
+     
+     /*Style for Twitter icon*/
+     #twitter {
+         left: 64px;
+         width: 32px;
+         background: url('../images/social-icons.png') -64px 0;
+     }
+     
+     /*Style for YouTube icon*/
+     #youtube {
+         left: 96px;
+         width: 32px;
+         background: url('../images/social-icons.png') -96px 0;
+     }
+
+     /*Style for Facebook-icon hover*/
+     #facebook a:hover {
+         left: 0px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') 0 0;
+     }
+     
+     /*Style for Pinterest-icon hover*/
+     #pinterest a:hover {
+         left: 32px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') -32px 0;
+     }
+     
+     /*Style for Twitter-icon hover*/
+     #twitter a:hover {
+         left: 64px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') -64px 0;
+     }
+     
+     /*Style for YouTube-icon hover*/
+     #youtube a:hover {
+         left: 96px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') -96px 0;
+     }
+     
+     /*Style for Facebook-icon active*/
+     #facebook a:active {
+         left: 0px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') 0 0;
+         background-color: green;
+     }
+     
+     /*Style for Pinterest-icon active*/
+     #pinterest a:active {
+         left: 32px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') -32px 0;
+         background-color: green;
+     }
+     
+     /*Style for Twitter-icon active*/
+     #twitter a:active {
+         left: 64px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') -64px 0;
+         background-color: green;
+     }
+     
+     /*Style for YouTube-icon active*/
+     #youtube a:active {
+         left: 96px;
+         width: 32px;
+         background: url('../images/social-icons-hover.png') -96px 0;
+         background-color: green;
+     }
+
+
